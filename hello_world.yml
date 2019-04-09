@@ -1,0 +1,14 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
+      tags:
+        - api
+    - name: Hello again Message
+      debug:
+        msg: "Hello again World!"
+      tags:
+        - ui
+
